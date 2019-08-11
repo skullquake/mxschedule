@@ -1,7 +1,7 @@
 # mxschedule
 Scheduled execution of microflows
 
-![Screenshot](link-to-image)
+![Screenshot](https://github.com/skullquake/mxschedule/raw/master/res/mxschedule.png)
 
 Dependencies:
 * com.springsource.org.apache.commons.lang-2.5.0.jar
