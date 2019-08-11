@@ -9,6 +9,7 @@ Dependencies:
 * Mx Model Reflection
 
 Instructions:
+* Get deps
 * Add Module
 * Add Navigation
 * Run Project
