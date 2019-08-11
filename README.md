@@ -1,6 +1,8 @@
 # mxschedule
 Scheduled execution of microflows
 
+![Screenshot](link-to-image)
+
 Dependencies:
 * com.springsource.org.apache.commons.lang-2.5.0.jar
 * org.springframework.context-3.1.3.release.jar
