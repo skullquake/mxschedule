@@ -5,7 +5,7 @@ Scheduled execution of microflows
 
 
 Features
-* CronTab Microflow scheduling
+* [multiple] CronTab [multiple] Microflow scheduling
 * CronJob execution termination, including currently executing Microflow
 
 Dependencies:
