@@ -1,5 +1,6 @@
 # mxschedule
-Scheduled execution of microflows
+
+Mendi Scheduled Execution
 
 ![Screenshot](https://github.com/skullquake/mxschedule/raw/master/res/mxschedule.png)
 
