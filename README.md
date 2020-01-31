@@ -3,6 +3,11 @@ Scheduled execution of microflows
 
 ![Screenshot](https://github.com/skullquake/mxschedule/raw/master/res/mxschedule.png)
 
+
+Features
+* CronTab Microflow scheduling
+* CronJob execution termination, including currently executing Microflow
+
 Dependencies:
 * com.springsource.org.apache.commons.lang-2.5.0.jar
 * org.springframework.context-3.1.3.release.jar
