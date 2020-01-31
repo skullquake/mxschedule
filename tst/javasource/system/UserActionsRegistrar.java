@@ -11,6 +11,7 @@ public class UserActionsRegistrar
     registrator.registerUserAction(mxmodelreflection.actions.SyncObjects.class);
     registrator.registerUserAction(mxmodelreflection.actions.TestThePattern.class);
     registrator.registerUserAction(mxmodelreflection.actions.ValidateTokensInMessage.class);
+    registrator.registerUserAction(mxschedule.actions.ja_cronstring_validate.class);
     registrator.registerUserAction(mxschedule.actions.ja_deleteSchedule.class);
     registrator.registerUserAction(mxschedule.actions.ja_getSchedule.class);
     registrator.registerUserAction(mxschedule.actions.ja_putSchedule.class);

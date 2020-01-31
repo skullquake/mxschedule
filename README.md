@@ -7,14 +7,15 @@ Scheduled execution of microflows
 Features
 * [multiple] CronTab [multiple] Microflow scheduling
 * CronJob execution termination, including currently executing Microflow
+* CronString validation
 
 Dependencies:
-* com.springsource.org.apache.commons.lang-2.5.0.jar
-* org.springframework.context-3.1.3.release.jar
-* spring-beans-3.1.3.RELEASE.jar
-* spring-core-3.1.3.RELEASE.jar
 * com.google.gson-2.2.4.jar
 * commons-logging-1.1.1.jar
+* org.apache.commons.io-2.3.0.jar
+* spring-beans-5.2.3.RELEASE.jar
+* spring-context-5.2.3.RELEASE.jar
+* spring-core-5.2.3.RELEASE.jar
 * Mx Model Reflection
 
 Instructions:
@@ -28,3 +29,4 @@ Instructions:
 * Choose Microflows
 * Test
 * Verify
+

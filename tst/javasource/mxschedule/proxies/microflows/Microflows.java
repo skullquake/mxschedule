@@ -35,6 +35,19 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
+	public static boolean ivk_cronstring_validate(IContext context, java.lang.String _str_a)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("str_a", _str_a);
+			return (java.lang.Boolean)Core.execute(context, "MxSchedule.ivk_cronstring_validate", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
 	public static void ivk_schedule_put(IContext context, java.lang.String _str_mf, java.lang.String _str_cron)
 	{
 		try
@@ -81,6 +94,19 @@ public class Microflows
 			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
 			params.put("obj_schedule", _obj_schedule == null ? null : _obj_schedule.getMendixObject());
 			Core.execute(context, "MxSchedule.ivk_schedule_start", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void ivk_schedule_validate_cronstring(IContext context, mxschedule.proxies.Schedule _obj_schedule)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("obj_schedule", _obj_schedule == null ? null : _obj_schedule.getMendixObject());
+			Core.execute(context, "MxSchedule.ivk_schedule_validate_cronstring", params);
 		}
 		catch (CoreException e)
 		{
