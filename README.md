@@ -5,8 +5,8 @@ Scheduled execution of microflows
 
 
 Features
-* [multiple] CronTab [multiple] Microflow scheduling
-* CronJob execution termination, including currently executing Microflow
+* [multiple] CronTab [multiple [con]current] Microflow/SJS scheduling
+* [multiple]CronJob execution termination, including currently executing Microflow/SJS
 * CronString validation
 
 Dependencies:

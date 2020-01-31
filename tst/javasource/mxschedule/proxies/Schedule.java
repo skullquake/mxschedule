@@ -24,6 +24,9 @@ public class Schedule
 	public enum MemberNames
 	{
 		Cron("Cron"),
+		BoolConcurrent("BoolConcurrent"),
+		BoolStartup("BoolStartup"),
+		Schedule_Script("MxSchedule.Schedule_Script"),
 		Schedule_Microflows("MxSchedule.Schedule_Microflows");
 
 		private java.lang.String metaName;
@@ -153,6 +156,124 @@ public class Schedule
 	public final void setCron(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String cron)
 	{
 		getMendixObject().setValue(context, MemberNames.Cron.toString(), cron);
+	}
+
+	/**
+	 * @return value of BoolConcurrent
+	 */
+	public final java.lang.Boolean getBoolConcurrent()
+	{
+		return getBoolConcurrent(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of BoolConcurrent
+	 */
+	public final java.lang.Boolean getBoolConcurrent(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.BoolConcurrent.toString());
+	}
+
+	/**
+	 * Set value of BoolConcurrent
+	 * @param boolconcurrent
+	 */
+	public final void setBoolConcurrent(java.lang.Boolean boolconcurrent)
+	{
+		setBoolConcurrent(getContext(), boolconcurrent);
+	}
+
+	/**
+	 * Set value of BoolConcurrent
+	 * @param context
+	 * @param boolconcurrent
+	 */
+	public final void setBoolConcurrent(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean boolconcurrent)
+	{
+		getMendixObject().setValue(context, MemberNames.BoolConcurrent.toString(), boolconcurrent);
+	}
+
+	/**
+	 * @return value of BoolStartup
+	 */
+	public final java.lang.Boolean getBoolStartup()
+	{
+		return getBoolStartup(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of BoolStartup
+	 */
+	public final java.lang.Boolean getBoolStartup(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.BoolStartup.toString());
+	}
+
+	/**
+	 * Set value of BoolStartup
+	 * @param boolstartup
+	 */
+	public final void setBoolStartup(java.lang.Boolean boolstartup)
+	{
+		setBoolStartup(getContext(), boolstartup);
+	}
+
+	/**
+	 * Set value of BoolStartup
+	 * @param context
+	 * @param boolstartup
+	 */
+	public final void setBoolStartup(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean boolstartup)
+	{
+		getMendixObject().setValue(context, MemberNames.BoolStartup.toString(), boolstartup);
+	}
+
+	/**
+	 * @return value of Schedule_Script
+	 */
+	public final java.util.List<mxschedule.proxies.Script> getSchedule_Script() throws com.mendix.core.CoreException
+	{
+		return getSchedule_Script(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Schedule_Script
+	 */
+	@SuppressWarnings("unchecked")
+	public final java.util.List<mxschedule.proxies.Script> getSchedule_Script(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		java.util.List<mxschedule.proxies.Script> result = new java.util.ArrayList<mxschedule.proxies.Script>();
+		Object valueObject = getMendixObject().getValue(context, MemberNames.Schedule_Script.toString());
+		if (valueObject == null)
+			return result;
+		for (com.mendix.systemwideinterfaces.core.IMendixObject mendixObject : com.mendix.core.Core.retrieveIdList(context, (java.util.List<com.mendix.systemwideinterfaces.core.IMendixIdentifier>) valueObject))
+			result.add(mxschedule.proxies.Script.initialize(context, mendixObject));
+		return result;
+	}
+
+	/**
+	 * Set value of Schedule_Script
+	 * @param schedule_script
+	 */
+	public final void setSchedule_Script(java.util.List<mxschedule.proxies.Script> schedule_script)
+	{
+		setSchedule_Script(getContext(), schedule_script);
+	}
+
+	/**
+	 * Set value of Schedule_Script
+	 * @param context
+	 * @param schedule_script
+	 */
+	public final void setSchedule_Script(com.mendix.systemwideinterfaces.core.IContext context, java.util.List<mxschedule.proxies.Script> schedule_script)
+	{
+		java.util.List<com.mendix.systemwideinterfaces.core.IMendixIdentifier> identifiers = new java.util.ArrayList<com.mendix.systemwideinterfaces.core.IMendixIdentifier>();
+		for (mxschedule.proxies.Script proxyObject : schedule_script)
+			identifiers.add(proxyObject.getMendixObject().getId());
+		getMendixObject().setValue(context, MemberNames.Schedule_Script.toString(), identifiers);
 	}
 
 	/**
