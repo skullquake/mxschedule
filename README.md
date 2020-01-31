@@ -8,6 +8,8 @@ Dependencies:
 * org.springframework.context-3.1.3.release.jar
 * spring-beans-3.1.3.RELEASE.jar
 * spring-core-3.1.3.RELEASE.jar
+* com.google.gson-2.2.4.jar
+* commons-logging-1.1.1.jar
 * Mx Model Reflection
 
 Instructions:
