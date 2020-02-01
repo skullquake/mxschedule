@@ -1,14 +1,17 @@
 # mxschedule
 
-Mendi Scheduled Execution
+Mendix Scheduled Execution
 
 ![Screenshot](https://github.com/skullquake/mxschedule/raw/master/res/mxschedule.png)
 
 
 Features
-* [multiple] CronTab [multiple [con]current] Microflow/SJS scheduling
-* [multiple]CronJob execution termination, including currently executing Microflow/SJS
-* CronString validation
+* [multiple] Cron|Millisecond [multiple [con]current] Microflow/SJS scheduling
+* [multiple] Cron|Millisecond execution termination, including currently executing Microflow/SJS
+* Action schedule termination Java Action
+* Current execution log
+* Optional execution log
+* Configuration Validation
 
 Dependencies:
 * com.google.gson-2.2.4.jar

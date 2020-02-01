@@ -29,7 +29,11 @@ public class ja_nashorn_exec extends CustomJavaAction<java.lang.Boolean>
 	public java.lang.Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
+		javax.script.ScriptEngine engine=new javax.script.ScriptEngineManager().getEngineByName("nashorn");
+		javax.script.Bindings bindings=engine.createBindings();
+		bindings.put("root", this);
+		engine.eval(str_script,bindings);
+		return true;
 		// END USER CODE
 	}
 

@@ -23,7 +23,10 @@ public class Schedule
 	 */
 	public enum MemberNames
 	{
+		Description("Description"),
+		Mode("Mode"),
 		Cron("Cron"),
+		Milliseconds("Milliseconds"),
 		BoolConcurrent("BoolConcurrent"),
 		BoolStartup("BoolStartup"),
 		Schedule_Script("MxSchedule.Schedule_Script"),
@@ -123,6 +126,86 @@ public class Schedule
 		com.mendix.core.Core.delete(context, getMendixObject());
 	}
 	/**
+	 * @return value of Description
+	 */
+	public final java.lang.String getDescription()
+	{
+		return getDescription(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Description
+	 */
+	public final java.lang.String getDescription(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Description.toString());
+	}
+
+	/**
+	 * Set value of Description
+	 * @param description
+	 */
+	public final void setDescription(java.lang.String description)
+	{
+		setDescription(getContext(), description);
+	}
+
+	/**
+	 * Set value of Description
+	 * @param context
+	 * @param description
+	 */
+	public final void setDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String description)
+	{
+		getMendixObject().setValue(context, MemberNames.Description.toString(), description);
+	}
+
+	/**
+	 * Set value of Mode
+	 * @param mode
+	 */
+	public final mxschedule.proxies.enum_mode getMode()
+	{
+		return getMode(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Mode
+	 */
+	public final mxschedule.proxies.enum_mode getMode(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.Mode.toString());
+		if (obj == null)
+			return null;
+
+		return mxschedule.proxies.enum_mode.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of Mode
+	 * @param mode
+	 */
+	public final void setMode(mxschedule.proxies.enum_mode mode)
+	{
+		setMode(getContext(), mode);
+	}
+
+	/**
+	 * Set value of Mode
+	 * @param context
+	 * @param mode
+	 */
+	public final void setMode(com.mendix.systemwideinterfaces.core.IContext context, mxschedule.proxies.enum_mode mode)
+	{
+		if (mode != null)
+			getMendixObject().setValue(context, MemberNames.Mode.toString(), mode.toString());
+		else
+			getMendixObject().setValue(context, MemberNames.Mode.toString(), null);
+	}
+
+	/**
 	 * @return value of Cron
 	 */
 	public final java.lang.String getCron()
@@ -156,6 +239,42 @@ public class Schedule
 	public final void setCron(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String cron)
 	{
 		getMendixObject().setValue(context, MemberNames.Cron.toString(), cron);
+	}
+
+	/**
+	 * @return value of Milliseconds
+	 */
+	public final java.lang.Integer getMilliseconds()
+	{
+		return getMilliseconds(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Milliseconds
+	 */
+	public final java.lang.Integer getMilliseconds(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.Milliseconds.toString());
+	}
+
+	/**
+	 * Set value of Milliseconds
+	 * @param milliseconds
+	 */
+	public final void setMilliseconds(java.lang.Integer milliseconds)
+	{
+		setMilliseconds(getContext(), milliseconds);
+	}
+
+	/**
+	 * Set value of Milliseconds
+	 * @param context
+	 * @param milliseconds
+	 */
+	public final void setMilliseconds(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer milliseconds)
+	{
+		getMendixObject().setValue(context, MemberNames.Milliseconds.toString(), milliseconds);
 	}
 
 	/**

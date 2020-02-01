@@ -60,14 +60,82 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
-	public static void ivk_schedule_put(IContext context, java.lang.String _str_mf, java.lang.String _str_cron)
+	public static void ivk_schedule_microflows_removeall(IContext context, mxschedule.proxies.Schedule _obj_schedule)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("obj_schedule", _obj_schedule == null ? null : _obj_schedule.getMendixObject());
+			Core.execute(context, "MxSchedule.ivk_schedule_microflows_removeall", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void ivk_schedule_put_mf_cron(IContext context, java.lang.String _str_mf, java.lang.String _str_cron)
 	{
 		try
 		{
 			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
 			params.put("str_mf", _str_mf);
 			params.put("str_cron", _str_cron);
-			Core.execute(context, "MxSchedule.ivk_schedule_put", params);
+			Core.execute(context, "MxSchedule.ivk_schedule_put_mf_cron", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void ivk_schedule_put_mf_ms(IContext context, java.lang.String _str_mf, java.lang.Long _int_ms)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("str_mf", _str_mf);
+			params.put("int_ms", _int_ms);
+			Core.execute(context, "MxSchedule.ivk_schedule_put_mf_ms", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void ivk_schedule_put_nh_cron(IContext context, java.lang.String _str_nh, java.lang.String _str_cron)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("str_nh", _str_nh);
+			params.put("str_cron", _str_cron);
+			Core.execute(context, "MxSchedule.ivk_schedule_put_nh_cron", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void ivk_schedule_put_nh_ms(IContext context, java.lang.String _str_nh, java.lang.Long _int_ms)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("str_nh", _str_nh);
+			params.put("int_ms", _int_ms);
+			Core.execute(context, "MxSchedule.ivk_schedule_put_nh_ms", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void ivk_schedule_script_removeall(IContext context, mxschedule.proxies.Schedule _obj_schedule)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("obj_schedule", _obj_schedule == null ? null : _obj_schedule.getMendixObject());
+			Core.execute(context, "MxSchedule.ivk_schedule_script_removeall", params);
 		}
 		catch (CoreException e)
 		{
@@ -119,6 +187,31 @@ public class Microflows
 			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
 			params.put("obj_schedule", _obj_schedule == null ? null : _obj_schedule.getMendixObject());
 			Core.execute(context, "MxSchedule.ivk_schedule_validate_cronstring", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void ivk_script_drop(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			Core.execute(context, "MxSchedule.ivk_script_drop", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void ivk_script_exec(IContext context, mxschedule.proxies.Script _obj_script)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("obj_script", _obj_script == null ? null : _obj_script.getMendixObject());
+			Core.execute(context, "MxSchedule.ivk_script_exec", params);
 		}
 		catch (CoreException e)
 		{
