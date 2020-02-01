@@ -31,7 +31,8 @@ Instructions:
 * Sync Microflows
 * Create Schedule
 * Set Cron string
-* Choose Microflows
+* Setup schedule
 * Test
 * Verify
+* Sleep
 
