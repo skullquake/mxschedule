@@ -32,6 +32,7 @@ public class ja_putSchedule_nh_cron extends CustomJavaAction<java.lang.Boolean>
 	public java.lang.Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
+		ja_putSchedule_nh_cron _this=this;
 		java.lang.Boolean ret=false;
 		if(str_nh==null){
 			throw new java.lang.Exception("Script null:Aborting...");
@@ -48,7 +49,7 @@ public class ja_putSchedule_nh_cron extends CustomJavaAction<java.lang.Boolean>
 					try{
 						javax.script.ScriptEngine engine=new javax.script.ScriptEngineManager().getEngineByName("nashorn");
 						javax.script.Bindings bindings=engine.createBindings();
-						bindings.put("root", this);
+						bindings.put("root", _this);
 						engine.eval(str_nh,bindings);
 					}catch(Exception e){
 						com.mendix.core.Core.getLogger("Runnable").error(e.toString());

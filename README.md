@@ -12,6 +12,7 @@ Features
 * Current execution log
 * Optional execution log
 * Configuration Validation
+* Generic testing [Non]Persistable domain model and overviews for testing
 
 Dependencies:
 * com.google.gson-2.2.4.jar
