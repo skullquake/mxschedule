@@ -8,7 +8,7 @@ Mendix Scheduled Execution
 Features
 * [multiple] Cron|Millisecond [multiple [con]current] Microflow/SJS scheduling
 * [multiple] Cron|Millisecond execution termination, including currently executing Microflow/SJS
-* Action schedule termination Java Action
+* Terminate action parent schedule via utility Java Action
 * Current execution log
 * Optional execution log
 * Configuration Validation
