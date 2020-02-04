@@ -3,6 +3,11 @@ tst/.classpath
 tst/.project
 tst/.classpath
 tst/.project
+tst6103/deployment/
+tst6103/.classpath
+tst6103/.project
+tst6103/.classpath
+tst6103/.project
 *.launch
 *.tmp
 *.lock
